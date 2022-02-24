@@ -4,7 +4,7 @@ declare(strict_types=1);
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
-require './BasketClass.php';
+
 require './BasketItemClass.php';
 $banana=new BasketItem("fruit",1,6,0.06);
 $apple=new BasketItem("fruit",1.5,3,0.06);
