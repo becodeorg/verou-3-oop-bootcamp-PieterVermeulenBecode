@@ -28,5 +28,5 @@ function totalTax($basket)
     }
     return $totalTax;
 }
-echo getTotalOfBasket($basket)."</br>";
-echo totalTax($basket)."</br>";
+echo getTotalOfBasket($basket)." € </br>";
+echo totalTax($basket)." € </br>";
