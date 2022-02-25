@@ -6,8 +6,8 @@ ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
 require './BasketItemClass.php';
-$banana=new BasketItem("fruit",1,6,0.06);
-$apple=new BasketItem("fruit",1.5,3,0.06);
+$banana=new BasketItem("fruit",1,6);
+$apple=new BasketItem("fruit",1.5,3);
 $wineBottle=new BasketItem("Alkool",10,2,0.21);
 $basket=[$banana,$apple,$wineBottle];
 function getTotalOfBasket($basket)
@@ -41,5 +41,6 @@ function changePriceOfType($basket,$type,$discount)
 
 echo getTotalOfBasket($basket)." € </br>";
 echo totalTax($basket)." € </br>";
-echo changePriceOfType($basket,"fruit",0.5)." </br>";;
+echo changePriceOfType($basket,"fruit",0.5)." </br>";
 echo getTotalOfBasket($basket)." € </br>";
+echo totalTax($basket)." € </br>";
